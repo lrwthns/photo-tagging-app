@@ -1,4 +1,5 @@
 import { initializeApp } from 'firebase/app';
+import ImageContainer from './ImageContainer';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAO9lhmLFk7VTubJWPsQAgtNA8hZMyIG2Q",
@@ -14,7 +15,7 @@ const app = initializeApp(firebaseConfig);
 function App() {
   return (
     <div className="App">
-    <app />
+      <ImageContainer />
     </div>
   );
 }
