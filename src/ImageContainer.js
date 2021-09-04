@@ -1,9 +1,9 @@
-import fiveDays from './assets/5Corporation5Days.jpg'
+import waldo1 from './assets/waldo1.jpg'
 
 const ImageContainer = () => {
   return ( 
     <div>
-      <img src={fiveDays} alt="puzzle pic" />
+      <img src={waldo1} alt="Where's Waldo Image" />
     </div>
    );
 }
