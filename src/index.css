@@ -9,9 +9,19 @@ html, body {
 }
 
 .App {
-  height: 100%;
-  font-family: 'Karla';
+  min-height: 100%;
   overflow: auto;
+}
+
+.ImageContainer {
+  position: absolute;
+  overflow: auto;
+}
+
+.GameHeader {
+  position: sticky;
+  height: 5rem;
+  top: 0;
 }
 
 .Dropdown {

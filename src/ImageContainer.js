@@ -1,4 +1,3 @@
-import waldo1 from './assets/waldo1.jpg'
 import Dropdown from './Dropdown';
 
 const ImageContainer = () => {
@@ -13,14 +12,16 @@ const ImageContainer = () => {
     } else {
       ddown.style.display = "none";
     }
+    console.log(x);
+    console.log(y);
   }
 
   return ( 
-    <div>
-      <img src={waldo1} alt="Where's Waldo" onClick={(e) => toggleDropdown(e)}/>
+    <div className="ImageContainer" onClick={(e) => toggleDropdown(e)}>
+      <img src='' alt="Where's Waldo" className="img-container"/>
       <Dropdown />
     </div>
-   );
+  );
 }
  
 export default ImageContainer;
