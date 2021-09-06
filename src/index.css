@@ -10,18 +10,22 @@ html, body {
 
 .App {
   min-height: 100%;
-  overflow: auto;
 }
 
 .ImageContainer {
-  position: absolute;
-  overflow: auto;
+  /* position: absolute; */
+}
+
+.ImageContainer > img {
+  width: 100%;
 }
 
 .GameHeader {
   position: sticky;
   height: 5rem;
   top: 0;
+  background: rgb(214, 214, 214);
+  width: 100%;
 }
 
 .Dropdown {

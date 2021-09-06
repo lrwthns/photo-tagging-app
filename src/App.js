@@ -31,7 +31,7 @@ getDownloadURL(waldo1Ref)
 function App() {
   return (
     <div className="App">
-      {/* <GameHeader /> */}
+      <GameHeader />
       <ImageContainer />
     </div>
   );
