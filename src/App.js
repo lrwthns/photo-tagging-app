@@ -17,16 +17,25 @@ const firebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore();
 const storage = getStorage();
 const waldo1Ref = ref(storage, 'images/where-waldo1.jpg');
+const charWaldoRef = ref(storage, 'images/waldo.png');
+const charWendaRef = ref(storage, 'images/wenda.png');
 
-getDownloadURL(waldo1Ref)
+const downloadPic = (ref, elem) => {
+  getDownloadURL(ref)
   .then(url => {
     console.log(url);
-    const img = document.querySelector('.img-container');
+    const img = document.querySelector(elem);
     img.setAttribute('src', url);
   })
   .catch(error => {
     console.log(error);
   })
+}
+
+downloadPic(waldo1Ref, '.img-container');
+downloadPic(charWaldoRef, '.waldo-icon');
+downloadPic(charWendaRef, '.wenda-icon');
+
 
 function App() {
   return (
