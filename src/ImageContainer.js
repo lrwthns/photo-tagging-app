@@ -1,4 +1,5 @@
 import Dropdown from './Dropdown';
+import GameHeader from './GameHeader';
 
 const ImageContainer = () => {
   const toggleDropdown = (e) => {
@@ -18,6 +19,7 @@ const ImageContainer = () => {
 
   return ( 
     <div className="ImageContainer" onClick={(e) => toggleDropdown(e)}>
+      <GameHeader />
       <img src='' alt="Where's Waldo" className="img-container"/>
       <Dropdown />
     </div>

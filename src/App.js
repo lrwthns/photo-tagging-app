@@ -1,7 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from "firebase/firestore";
 import { getDownloadURL, getStorage, ref } from "firebase/storage";
-import GameHeader from './GameHeader';
 import ImageContainer from './ImageContainer';
 
 const firebaseConfig = {
@@ -40,7 +39,6 @@ downloadPic(charWendaRef, '.wenda-icon');
 function App() {
   return (
     <div className="App">
-      <GameHeader />
       <ImageContainer />
     </div>
   );

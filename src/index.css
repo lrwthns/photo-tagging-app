@@ -21,11 +21,28 @@ html, body {
 }
 
 .GameHeader {
-  position: sticky;
+  position: absolute;
   height: 5rem;
   top: 0;
   background: rgb(214, 214, 214);
-  width: 100%;
+  width: 30rem;
+  display: flex;
+  padding: 0rem 1rem;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.Stopwatch {
+  font-size: 4rem;
+  font-family: 'Karla';
+}
+
+.Icon {
+  width: 6rem;
+}
+
+.Icon > img {
+  height: 100%;
 }
 
 .Dropdown {
